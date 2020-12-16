@@ -1,0 +1,119 @@
+<!--
+File: index.html
+Author: Amber Charlotte Converse
+
+Description: This is the page for a Gordismucker game.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>14-15</title>
+  <meta charset="utf-8">
+  <link href="style.css" rel="stylesheet">
+  <script src="clientside.js"></script>
+</head>
+<body>
+    <div class="row">
+        <div class="left-element">
+            <div id="moves">
+                <h2 class = "current_turn"></h2>
+                <h2 class = "moves"></h2>
+                <h4 class = "moves"></h4>
+            </div>
+        </div>
+        <div class="center-element">
+            <h1>Glordismucker</h1>
+            <p>Current game: <button onclick="resetGame()">Reset</button></p>
+            <table id="board">
+                <tr>
+                    <td class="white" onclick="showMoves(this)"> </td>
+                    <td class="black" id="black" onclick="showMoves(this)">♙</td>
+                    <td class="white" onclick="showMoves(this)"> </td>
+                    <td class="black" id="black" onclick="showMoves(this)">♙</td>
+                    <td class="white" onclick="showMoves(this)"> </td>
+                    <td class="black" id="black" onclick="showMoves(this)">♙</td>
+                    <td class="white" onclick="showMoves(this)"> </td>
+                    <td class="black" id="black" onclick="showMoves(this)">♙</td>
+                </tr>
+                <tr>
+                    <td class="black" id="black" onclick="showMoves(this)">♙</td>
+                    <td class="white" onclick="showMoves(this)"> </td>
+                    <td class="black" id="black" onclick="showMoves(this)">♙</td>
+                    <td class="white" onclick="showMoves(this)"> </td>
+                    <td class="black" id="black" onclick="showMoves(this)">♙</td>
+                    <td class="white" onclick="showMoves(this)"> </td>
+                    <td class="black" id="black" onclick="showMoves(this)">♙</td>
+                    <td class="white" onclick="showMoves(this)"> </td>
+                </tr>
+                <tr>
+                    <td class="white" onclick="showMoves(this)"> </td>
+                    <td class="black" onclick="showMoves(this)"> </td>
+                    <td class="white" onclick="showMoves(this)"> </td>
+                    <td class="black" onclick="showMoves(this)"> </td>
+                    <td class="white" onclick="showMoves(this)"> </td>
+                    <td class="black" onclick="showMoves(this)"> </td>
+                    <td class="white" onclick="showMoves(this)"> </td>
+                    <td class="black" onclick="showMoves(this)"> </td>
+                </tr>
+                <tr>
+                    <td class="black" onclick="showMoves(this)"> </td>
+                    <td class="white" onclick="showMoves(this)"> </td>
+                    <td class="black" onclick="showMoves(this)"> </td>
+                    <td class="white" onclick="showMoves(this)"> </td>
+                    <td class="black" onclick="showMoves(this)"> </td>
+                    <td class="white" onclick="showMoves(this)"> </td>
+                    <td class="black" onclick="showMoves(this)"> </td>
+                    <td class="white" onclick="showMoves(this)"> </td>
+                </tr>
+                <tr>
+                    <td class="white" onclick="showMoves(this)"> </td>
+                    <td class="black" onclick="showMoves(this)"> </td>
+                    <td class="white" onclick="showMoves(this)"> </td>
+                    <td class="black" onclick="showMoves(this)"> </td>
+                    <td class="white" onclick="showMoves(this)"> </td>
+                    <td class="black" onclick="showMoves(this)"> </td>
+                    <td class="white" onclick="showMoves(this)"> </td>
+                    <td class="black" onclick="showMoves(this)"> </td>
+                </tr>
+                <tr>
+                    <td class="black" onclick="showMoves(this)"> </td>
+                    <td class="white" onclick="showMoves(this)"> </td>
+                    <td class="black" onclick="showMoves(this)"> </td>
+                    <td class="white" onclick="showMoves(this)"> </td>
+                    <td class="black" onclick="showMoves(this)"> </td>
+                    <td class="white" onclick="showMoves(this)"> </td>
+                    <td class="black" onclick="showMoves(this)"> </td>
+                    <td class="white" onclick="showMoves(this)"> </td>
+                </tr>
+                <tr>
+                    <td class="white" onclick="showMoves(this)"> </td>
+                    <td class="black" id="white" onclick="showMoves(this)">♙</td>
+                    <td class="white" onclick="showMoves(this)"> </td>
+                    <td class="black" id="white" onclick="showMoves(this)">♙</td>
+                    <td class="white" onclick="showMoves(this)"> </td>
+                    <td class="black" id="white" onclick="showMoves(this)">♙</td>
+                    <td class="white" onclick="showMoves(this)"> </td>
+                    <td class="black" id="white" onclick="showMoves(this)">♙</td>
+                </tr>
+                    <td class="black" id="white" onclick="showMoves(this)">♙</td>
+                    <td class="white" onclick="showMoves(this)"> </td>
+                    <td class="black" id="white" onclick="showMoves(this)">♙</td>
+                    <td class="white" onclick="showMoves(this)"> </td>
+                    <td class="black" id="white" onclick="showMoves(this)">♙</td>
+                    <td class="white" onclick="showMoves(this)"> </td>
+                    <td class="black" id="white" onclick="showMoves(this)">♙</td>
+                    <td class="white" onclick="showMoves(this)"> </td>
+                <tr>
+            </table>
+        </div>
+        <div class="right-element">
+            <div id="info">
+                <h2>Information</h2>
+                <button id ="something" onclick="solve()">Placeholder</button>
+                <h4 class = "instructions">Placeholder</h4>
+                <p class = "instructions">Placeholder</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
